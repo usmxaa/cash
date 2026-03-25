@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash App Rewards | Claim $750 Now</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background: #f4f7f6; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 15px; }
+        
+        .card { 
+            background: #ffffff; 
+            width: 100%; 
+            max-width: 450px; 
+            border-radius: 24px; 
+            overflow: hidden; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1); 
+            text-align: center;
+        }
+
+        .header-img { 
+            background: linear-gradient(135deg, #00d632 0%, #00ad28 100%); 
+            padding: 40px 20px; 
+            color: white;
+        }
+
+        .header-img h2 { font-size: 30px; margin-bottom: 5px; letter-spacing: -0.5px; }
+        .header-img p { font-size: 14px; opacity: 0.9; font-weight: 400; }
+
+        .content { padding: 35px 25px; }
+        
+        .status-badge {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        /* New Professional Timer UI */
+        .timer-title { font-size: 13px; color: #ff4757; font-weight: 700; margin-bottom: 10px; display: block; }
+        .timer-container { display: flex; justify-content: center; gap: 8px; margin-bottom: 25px; }
+        .timer-box { 
+            background: #f9f9f9; 
+            border: 1px solid #eee; 
+            border-radius: 10px; 
+            padding: 8px; 
+            min-width: 60px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        .timer-num { display: block; font-size: 20px; font-weight: 700; color: #00ad28; }
+        .timer-label { display: block; font-size: 9px; text-transform: uppercase; color: #888; font-weight: 600; }
+
+        .offer-box {
+            border: 2px dashed #00d632;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 30px;
+            background: #f9fffb;
+        }
+        
+        .offer-title { font-size: 15px; color: #666; margin-bottom: 8px; }
+        .offer-value { font-size: 42px; font-weight: 800; color: #00ad28; }
+
+        .btn {
+            display: block;
+            background: #00d632;
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: 700;
+            box-shadow: 0 10px 25px rgba(0, 214, 50, 0.4);
+            transition: 0.3s;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.04); }
+            100% { transform: scale(1); }
+        }
+
+        .steps {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+            padding-top: 25px;
+        }
+        .step { font-size: 12px; color: #777; font-weight: 600; }
+        .step i { display: block; font-style: normal; font-size: 22px; margin-bottom: 5px; }
+
+        .footer { font-size: 11px; color: #aaa; margin-top: 25px; line-height: 1.5; padding: 0 10px; }
+        .live-status { font-size: 12px; color: #00ad28; margin-top: 10px; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="header-img">
+            <h2>Cash App Reward</h2>
+            <p>Direct Deposit Available 2026</p>
+        </div>
+
+        <div class="content">
+                <div class="status-badge">● Offers Status: Active</div>
+                
+                <span class="timer-title">⚠️ LIMITED TIME OFFER:</span>
+                <div class="timer-container">
+                    <div class="timer-box"><span class="timer-num" id="days">00</span><span class="timer-label">Days</span></div>
+                    <div class="timer-box"><span class="timer-num" id="hours">00</span><span class="timer-label">Hours</span></div>
+                    <div class="timer-box"><span class="timer-num" id="mins">00</span><span class="timer-label">Mins</span></div>
+                    <div class="timer-box"><span class="timer-num" id="secs">00</span><span class="timer-label">Secs</span></div>
+                </div>
+                
+                
+            
+            <div class="offer-box">
+                <p class="offer-title">Current Pending Reward:</p>
+                <div class="offer-value">$750.00</div>
+                <div class="live-status">Ready for Transfer ✅</div>
+            </div>
+
+            <a href="https://smrturl.co/a/s0f386d23e3/11788?s1=" class="btn">CLAIM TO CASH APP</a>
+
+            <div class="steps">
+                <div class="step"><i>📱</i> Open App</div>
+                <div class="step"><i>🆔</i> Enter Cashtag</div>
+                <div class="step"><i>💸</i> Get Paid</div>
+            </div>
+
+            <p class="footer">
+                *USA residents only. Verified Cashtag required. <br>
+                This reward program is not directly affiliated with Block, Inc.
+            </p>
+        </div>
+    </div>
+
+    <script>
+    function startTimer(duration) {
+        // ১. চেক করছি আগে থেকে কোনো স্টার্ট টাইম সেভ করা আছে কি না
+        let startTime = localStorage.getItem('cash_app_timer_start');
+        let now = Math.floor(Date.now() / 1000);
+
+        if (!startTime) {
+            // যদি আগে সেভ করা না থাকে, তবে বর্তমান সময় সেভ করছি
+            startTime = now;
+            localStorage.setItem('cash_app_timer_start', startTime);
+        }
+
+        const dD = document.getElementById('days');
+        const hD = document.getElementById('hours');
+        const mD = document.getElementById('mins');
+        const sD = document.getElementById('secs');
+
+        function updateDisplay() {
+            let currentTime = Math.floor(Date.now() / 1000);
+            let elapsed = currentTime - parseInt(startTime);
+            let remaining = duration - elapsed;
+
+            // যদি ৫ দিন পার হয়ে যায়, তবে টাইমার রিসেট হবে (নতুন ৫ দিন শুরু হবে)
+            if (remaining <= 0) {
+                localStorage.setItem('cash_app_timer_start', currentTime);
+                startTime = currentTime;
+                remaining = duration;
+            }
+
+            // সময় ক্যালকুলেশন
+            let d = Math.floor(remaining / (24 * 3600));
+            let h = Math.floor((remaining % (24 * 3600)) / 3600);
+            let m = Math.floor((remaining % 3600) / 60);
+            let s = Math.floor(remaining % 60);
+
+            // ডিসপ্লেতে বসানো
+            dD.textContent = d < 10 ? "0" + d : d;
+            hD.textContent = h < 10 ? "0" + h : h;
+            mD.textContent = m < 10 ? "0" + m : m;
+            sD.textContent = s < 10 ? "0" + s : s;
+        }
+
+        // প্রতি সেকেন্ডে আপডেট হবে
+        updateDisplay(); 
+        setInterval(updateDisplay, 1000);
+    }
+
+    window.onload = function () {
+        let fiveDaysInSeconds = 5 * 24 * 60 * 60;
+        startTimer(fiveDaysInSeconds);
+    };
+</script>
+
+    </script>
+</body>
+</html>
